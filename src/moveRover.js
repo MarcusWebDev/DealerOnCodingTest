@@ -32,8 +32,8 @@ const moveRover = (inputString) => {
 		let y = parseInt(startingPosition[1]);
 		let direction = startingPosition[2];
 		//Checks for valid input for the x and y coordinates as well as the direction of the inital rover position
-		if (Number.isNaN(x) || Number.isNaN(y) || (direction != 'N' && direction != 'E' && direction != 'S' && direction != 'W')) {
-			throw new InvalidStartingPosition("Invalid starting position for rover " + (Math.floor(i / 2) + 1) + ". Starting x coordinate: " + x + ", starting y coordiante: " + y + ", starting direction: " + direction + ".");
+		if (x > plateauWidth || x < 0 || y > plateauLength || y < 0 || Number.isNaN(x) || Number.isNaN(y) || (direction != 'N' && direction != 'E' && direction != 'S' && direction != 'W')) {
+			throw new InvalidStartingPosition("Invalid starting position for rover " + (Math.floor(i / 2) + 1) + "; starting x coordinate: " + x + ", starting y coordiante: " + y + ", starting direction: " + direction + ". This rover starting position is invalid for plateau length: " + (plateauLength + 1) + ", plateau width: " + (plateauWidth + 1) +".");
 		}
 		//Checks that instructions for the rover were supplied
 		if (inputArray[i + 1] == null) {

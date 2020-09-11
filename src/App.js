@@ -16,6 +16,7 @@ class App extends React.Component {
   handleRoverMovement() {
     try {
       this.setState({roverOutput: moveRover(this.state.roverInput)})
+      console.log(this.state.roverOutput);
     } catch(err) {
       console.log(err);
       this.setState({roverOutput: err.message})
