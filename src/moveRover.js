@@ -78,28 +78,28 @@ const moveRover = (inputString) => {
 							if (y + 1 <= plateauLength) {
 								y += 1;
 							} else {
-								throw new OutOfBoundsException("The proposed move would be out of bounds. Proposed y position: " + (y + 1) + ". Length of plateau: " + (plateauLength + 1) + ". Problem rover: " + (Math.floor(i / 2) + 1) + ". Instruction: " + j + ".");
+								throw new OutOfBoundsException("The proposed move would be out of bounds. Proposed y position: " + (y + 1) + ". Length of plateau: " + (plateauLength + 1) + ". Problem rover: " + (Math.floor(i / 2) + 1) + ". Instruction: " + (j + 1) + ".");
 							}
 							break;
 						case 1:
 							if (x + 1 <= plateauWidth) {
 								x += 1;
 							} else {
-								throw new OutOfBoundsException("The proposed move would be out of bounds. Proposed x position: " + (x + 1) + ". Width of plateau: " + (plateauLength + 1) + ". Problem rover: " + (Math.floor(i / 2) + 1) + ". Instruction: " + j + ".");
+								throw new OutOfBoundsException("The proposed move would be out of bounds. Proposed x position: " + (x + 1) + ". Width of plateau: " + (plateauLength + 1) + ". Problem rover: " + (Math.floor(i / 2) + 1) + ". Instruction: " + (j + 1) + ".");
 							}
 							break;
 						case 2:
 							if (y - 1 >= 0) {
 								y -= 1;
 							} else {
-								throw new OutOfBoundsException("The proposed move would be out of bounds. Proposed y position: " + (y - 1) + ". Length of plateau: " + (plateauLength + 1) + ". Problem rover: " + (Math.floor(i / 2) + 1) + ". Instruction: " + j + ".");
+								throw new OutOfBoundsException("The proposed move would be out of bounds. Proposed y position: " + (y - 1) + ". Length of plateau: " + (plateauLength + 1) + ". Problem rover: " + (Math.floor(i / 2) + 1) + ". Instruction: " + (j + 1) + ".");
 							}
 							break;
 						case 3:
 							if (x - 1 >= 0) {
 								x -= 1;
 							} else {
-								throw new OutOfBoundsException("The proposed move would be out of bounds. Proposed x position: " + (x - 1) + ". Width of plateau: " + (plateauLength + 1) + ". Problem rover: " + (Math.floor(i / 2) + 1) + ". Instruction: " + j + ".");
+								throw new OutOfBoundsException("The proposed move would be out of bounds. Proposed x position: " + (x - 1) + ". Width of plateau: " + (plateauLength + 1) + ". Problem rover: " + (Math.floor(i / 2) + 1) + ". Instruction: " + (j + 1) + ".");
 							}
 							break;
 						default:
