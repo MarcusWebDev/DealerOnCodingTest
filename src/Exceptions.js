@@ -40,4 +40,4 @@ class InvalidStartingPosition extends Error {
 		this.message = message;
 	}
 }
-module.exports = {InvalidInstructionException, InvalidDirectionException, InvalidSizeException, OutOfBoundsException, MissingInputException, InvalidStartingPosition};
+export {InvalidInstructionException, InvalidDirectionException, InvalidSizeException, OutOfBoundsException, MissingInputException, InvalidStartingPosition};

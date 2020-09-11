@@ -1,10 +1,4 @@
-let Exceptions = require("./exceptions");
-let OutOfBoundsException = Exceptions.OutOfBoundsException;
-let InvalidInstructionException = Exceptions.InvalidInstructionException;
-let InvalidDirectionException = Exceptions.InvalidDirectionException;
-let InvalidSizeException = Exceptions.InvalidSizeException;
-let MissingInputException = Exceptions.MissingInputException;
-let InvalidStartingPosition = Exceptions.InvalidStartingPosition;
+import {InvalidInstructionException, InvalidDirectionException, InvalidSizeException, OutOfBoundsException, MissingInputException, InvalidStartingPosition} from './exceptions';
 
 const moveRover = (inputString) => {
 	//Checks that the inputString exists
