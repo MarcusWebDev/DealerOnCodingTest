@@ -1,4 +1,4 @@
-let Exceptions = require("./Exceptions");
+let Exceptions = require("./exceptions");
 let OutOfBoundsException = Exceptions.OutOfBoundsException;
 let InvalidInstructionException = Exceptions.InvalidInstructionException;
 let InvalidDirectionException = Exceptions.InvalidDirectionException;
